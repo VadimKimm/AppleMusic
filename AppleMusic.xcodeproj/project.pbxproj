@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD258B4028BCEB7300B4077D /* LibraryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B3F28BCEB7300B4077D /* LibraryListView.swift */; };
 		DD258B4428BCF1DC00B4077D /* LibraryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B4328BCF1DC00B4077D /* LibraryRow.swift */; };
 		DD258B4828BCFB6000B4077D /* LibraryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B4728BCFB6000B4077D /* LibraryRowView.swift */; };
 		DD69D60A28BA37FC00E0B0A7 /* AppleMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD69D60928BA37FC00E0B0A7 /* AppleMusicApp.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD258B3F28BCEB7300B4077D /* LibraryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryListView.swift; sourceTree = "<group>"; };
 		DD258B4328BCF1DC00B4077D /* LibraryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRow.swift; sourceTree = "<group>"; };
 		DD258B4728BCFB6000B4077D /* LibraryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRowView.swift; sourceTree = "<group>"; };
 		DD69D60628BA37FC00E0B0A7 /* AppleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				DD69D61928BA397C00E0B0A7 /* LibraryView.swift */,
+				DD258B3F28BCEB7300B4077D /* LibraryListView.swift */,
 				DD258B4728BCFB6000B4077D /* LibraryRowView.swift */,
 				DD69D61B28BA6BE600E0B0A7 /* PlaybackView.swift */,
 			);
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD258B4428BCF1DC00B4077D /* LibraryRow.swift in Sources */,
+				DD258B4028BCEB7300B4077D /* LibraryListView.swift in Sources */,
 				DD69D61A28BA397C00E0B0A7 /* LibraryView.swift in Sources */,
 				DD69D61C28BA6BE600E0B0A7 /* PlaybackView.swift in Sources */,
 				DD69D60A28BA37FC00E0B0A7 /* AppleMusicApp.swift in Sources */,

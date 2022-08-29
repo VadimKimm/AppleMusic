@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct LibraryRowView: View {
+
+    var libraryItem: LibraryRow
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            HStack(spacing: 15) {
+                Image(systemName: libraryItem.imageName)
+                    .foregroundColor(.red)
+                Text(libraryItem.title)
+                    .font(.title3)
+                    .fontWeight(.light)
+            }
+        }
     }
 }
 
 struct LibraryRowView_Previews: PreviewProvider {
     static var previews: some View {
-        LibraryRowView()
+        LibraryRowView(libraryItem: LibraryRow(title: "Плейлисты", imageName: "music.mic"))
     }
 }

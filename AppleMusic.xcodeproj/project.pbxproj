@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD258B4428BCF1DC00B4077D /* LibraryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B4328BCF1DC00B4077D /* LibraryRow.swift */; };
 		DD69D60A28BA37FC00E0B0A7 /* AppleMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD69D60928BA37FC00E0B0A7 /* AppleMusicApp.swift */; };
 		DD69D60E28BA37FD00E0B0A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD69D60D28BA37FD00E0B0A7 /* Assets.xcassets */; };
 		DD69D61128BA37FD00E0B0A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD69D61028BA37FD00E0B0A7 /* Preview Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD258B4328BCF1DC00B4077D /* LibraryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRow.swift; sourceTree = "<group>"; };
 		DD69D60628BA37FC00E0B0A7 /* AppleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD69D60928BA37FC00E0B0A7 /* AppleMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicApp.swift; sourceTree = "<group>"; };
 		DD69D60D28BA37FD00E0B0A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +36,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD258B4228BCF1C200B4077D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD258B4328BCF1DC00B4077D /* LibraryRow.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DD69D5FD28BA37FC00E0B0A7 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				DD69D60928BA37FC00E0B0A7 /* AppleMusicApp.swift */,
-				DD69D61928BA397C00E0B0A7 /* LibraryView.swift */,
-				DD69D61B28BA6BE600E0B0A7 /* PlaybackView.swift */,
+				DD258B4228BCF1C200B4077D /* Model */,
+				DD258B4128BCEB7800B4077D /* View */,
 				DD69D60D28BA37FD00E0B0A7 /* Assets.xcassets */,
 				DD69D60F28BA37FD00E0B0A7 /* Preview Content */,
 			);
@@ -140,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD258B4428BCF1DC00B4077D /* LibraryRow.swift in Sources */,
 				DD69D61A28BA397C00E0B0A7 /* LibraryView.swift in Sources */,
 				DD69D61C28BA6BE600E0B0A7 /* PlaybackView.swift in Sources */,
 				DD69D60A28BA37FC00E0B0A7 /* AppleMusicApp.swift in Sources */,

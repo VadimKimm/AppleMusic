@@ -19,7 +19,6 @@ struct LibraryRowView: View {
             Text(libraryItem.title)
                 .font(.title3)
                 .fontWeight(.light)
-            Spacer()
         }
         .onTapGesture {
             onTap?()

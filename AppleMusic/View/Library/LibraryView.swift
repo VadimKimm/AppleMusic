@@ -43,7 +43,6 @@ struct LibraryView: View {
                     }
                 }
                 .foregroundColor(.red)
-
             }
             .environment(\.editMode, .constant(self.isEditMode ? .active : .inactive))
             .animation(.spring(), value: isEditMode)

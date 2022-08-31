@@ -10,6 +10,7 @@
 		DD258B4028BCEB7300B4077D /* LibraryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B3F28BCEB7300B4077D /* LibraryListView.swift */; };
 		DD258B4428BCF1DC00B4077D /* LibraryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B4328BCF1DC00B4077D /* LibraryRow.swift */; };
 		DD258B4828BCFB6000B4077D /* LibraryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B4728BCFB6000B4077D /* LibraryRowView.swift */; };
+		DD258B4A28BD215A00B4077D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B4928BD215A00B4077D /* ContentView.swift */; };
 		DD69D60A28BA37FC00E0B0A7 /* AppleMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD69D60928BA37FC00E0B0A7 /* AppleMusicApp.swift */; };
 		DD69D60E28BA37FD00E0B0A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD69D60D28BA37FD00E0B0A7 /* Assets.xcassets */; };
 		DD69D61128BA37FD00E0B0A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD69D61028BA37FD00E0B0A7 /* Preview Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		DD258B3F28BCEB7300B4077D /* LibraryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryListView.swift; sourceTree = "<group>"; };
 		DD258B4328BCF1DC00B4077D /* LibraryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRow.swift; sourceTree = "<group>"; };
 		DD258B4728BCFB6000B4077D /* LibraryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRowView.swift; sourceTree = "<group>"; };
+		DD258B4928BD215A00B4077D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DD69D60628BA37FC00E0B0A7 /* AppleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD69D60928BA37FC00E0B0A7 /* AppleMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicApp.swift; sourceTree = "<group>"; };
 		DD69D60D28BA37FD00E0B0A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,10 +45,8 @@
 		DD258B4128BCEB7800B4077D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DD69D61928BA397C00E0B0A7 /* LibraryView.swift */,
-				DD258B3F28BCEB7300B4077D /* LibraryListView.swift */,
-				DD258B4728BCFB6000B4077D /* LibraryRowView.swift */,
-				DD69D61B28BA6BE600E0B0A7 /* PlaybackView.swift */,
+				DDD9A3CD28BE5D58008854CF /* Playback */,
+				DDD9A3CC28BE4FDB008854CF /* Library */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -79,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				DD69D60928BA37FC00E0B0A7 /* AppleMusicApp.swift */,
+				DD258B4928BD215A00B4077D /* ContentView.swift */,
 				DD258B4228BCF1C200B4077D /* Model */,
 				DD258B4128BCEB7800B4077D /* View */,
 				DD69D60D28BA37FD00E0B0A7 /* Assets.xcassets */,
@@ -93,6 +94,24 @@
 				DD69D61028BA37FD00E0B0A7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DDD9A3CC28BE4FDB008854CF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				DD69D61928BA397C00E0B0A7 /* LibraryView.swift */,
+				DD258B3F28BCEB7300B4077D /* LibraryListView.swift */,
+				DD258B4728BCFB6000B4077D /* LibraryRowView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		DDD9A3CD28BE5D58008854CF /* Playback */ = {
+			isa = PBXGroup;
+			children = (
+				DD69D61B28BA6BE600E0B0A7 /* PlaybackView.swift */,
+			);
+			path = Playback;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +186,7 @@
 			files = (
 				DD258B4428BCF1DC00B4077D /* LibraryRow.swift in Sources */,
 				DD258B4028BCEB7300B4077D /* LibraryListView.swift in Sources */,
+				DD258B4A28BD215A00B4077D /* ContentView.swift in Sources */,
 				DD69D61A28BA397C00E0B0A7 /* LibraryView.swift in Sources */,
 				DD69D61C28BA6BE600E0B0A7 /* PlaybackView.swift in Sources */,
 				DD69D60A28BA37FC00E0B0A7 /* AppleMusicApp.swift in Sources */,

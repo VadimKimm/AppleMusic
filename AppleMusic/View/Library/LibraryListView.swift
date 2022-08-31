@@ -9,8 +9,8 @@ import SwiftUI
 
 struct LibraryListView: View {
 
-    @State private var libraryItems = [
-        LibraryRow(title: "Плейлисты", imageName: "music.note.list", isSelected: true),
+    @State var libraryItems = [
+        LibraryRow(title: "Плейлисты", imageName: "music.note.list"),
         LibraryRow(title: "Артисты", imageName: "music.mic"),
         LibraryRow(title: "Альбомы", imageName: "rectangle.stack.fill"),
         LibraryRow(title: "Телешоу и фильмы", imageName: "tv"),
@@ -24,8 +24,10 @@ struct LibraryListView: View {
 
     var body: some View {
         List {
-            ForEach(libraryItems) { item in
-                LibraryRowView(libraryItem: item)
+            ForEach($libraryItems) { $item in
+                LibraryRowView(libraryItem: item) {
+                    item.isSelected.toggle()
+                }
             }
             .onMove(perform: moveItem)
         }

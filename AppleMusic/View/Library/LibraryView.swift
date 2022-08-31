@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct LibraryView: View {
+
     @State var isEditMode = false
 
     var body: some View {
         NavigationView {
-            TabView {
-                ZStack {
-                    if isEditMode {
-                        LibraryListView()
-                    } else {
+            VStack {
+                if isEditMode {
+                    LibraryListView()
+                } else {
+                    ZStack {
                         VStack {
                             Text("Ищете свою музыку?")
                                 .font(.title2)
@@ -27,33 +28,8 @@ struct LibraryView: View {
                                 .foregroundColor(.gray)
                                 .multilineTextAlignment(.center)
                         }
-
-                        PlaybackView()
                     }
                 }
-                .tabItem {
-                    Image(systemName: "music.note")
-                    Text("Медиатека")
-                }
-
-                ZStack {
-                    Text("Радио")
-                    PlaybackView()
-                }
-                .tabItem {
-                    Image(systemName: "dot.radiowaves.left.and.right")
-                    Text("Радио")
-                }
-
-                ZStack {
-                    Text("Поиск")
-                    PlaybackView()
-                }
-                .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text("Поиск")
-                }
-
             }
             .navigationTitle("Медиатека")
             .toolbar {
@@ -69,7 +45,8 @@ struct LibraryView: View {
                 .foregroundColor(.red)
 
             }
-            .environment(\.editMode, .constant(self.isEditMode ? EditMode.active : EditMode.inactive))
+            .environment(\.editMode, .constant(self.isEditMode ? .active : .inactive))
+            .animation(.spring(), value: isEditMode)
         }
     }
 }

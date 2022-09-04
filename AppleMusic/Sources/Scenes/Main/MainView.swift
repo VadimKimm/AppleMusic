@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  AppleMusic
 //
 //  Created by Vadim Kim on 29.08.2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     
     var body: some View {
         ZStack {
@@ -40,13 +40,13 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }
 
 // MARK: - Metrics
 
-extension ContentView {
+extension MainView {
     enum Metrics {
         static let PlaybackViewYOffset: CGFloat = -50
     }

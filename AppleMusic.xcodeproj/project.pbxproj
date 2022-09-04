@@ -10,7 +10,7 @@
 		DD258B4028BCEB7300B4077D /* LibraryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B3F28BCEB7300B4077D /* LibraryListView.swift */; };
 		DD258B4428BCF1DC00B4077D /* LibraryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B4328BCF1DC00B4077D /* LibraryRow.swift */; };
 		DD258B4828BCFB6000B4077D /* LibraryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B4728BCFB6000B4077D /* LibraryRowView.swift */; };
-		DD258B4A28BD215A00B4077D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B4928BD215A00B4077D /* ContentView.swift */; };
+		DD258B4A28BD215A00B4077D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B4928BD215A00B4077D /* MainView.swift */; };
 		DD69D60A28BA37FC00E0B0A7 /* AppleMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD69D60928BA37FC00E0B0A7 /* AppleMusicApp.swift */; };
 		DD69D60E28BA37FD00E0B0A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD69D60D28BA37FD00E0B0A7 /* Assets.xcassets */; };
 		DD69D61128BA37FD00E0B0A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD69D61028BA37FD00E0B0A7 /* Preview Assets.xcassets */; };
@@ -22,7 +22,7 @@
 		DD258B3F28BCEB7300B4077D /* LibraryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryListView.swift; sourceTree = "<group>"; };
 		DD258B4328BCF1DC00B4077D /* LibraryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRow.swift; sourceTree = "<group>"; };
 		DD258B4728BCFB6000B4077D /* LibraryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRowView.swift; sourceTree = "<group>"; };
-		DD258B4928BD215A00B4077D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DD258B4928BD215A00B4077D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DD69D60628BA37FC00E0B0A7 /* AppleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD69D60928BA37FC00E0B0A7 /* AppleMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicApp.swift; sourceTree = "<group>"; };
 		DD69D60D28BA37FD00E0B0A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,21 +42,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DD258B4128BCEB7800B4077D /* View */ = {
+		DD56D2D228C49C7D008B6A2A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DDD9A3CD28BE5D58008854CF /* Playback */,
-				DDD9A3CC28BE4FDB008854CF /* Library */,
+				DD69D60F28BA37FD00E0B0A7 /* Preview Content */,
+				DD69D60D28BA37FD00E0B0A7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DD56D2D328C49C87008B6A2A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DD56D2D428C49C94008B6A2A /* Application */,
+				DD56D2D528C49C9C008B6A2A /* Scenes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DD56D2D428C49C94008B6A2A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DD69D60928BA37FC00E0B0A7 /* AppleMusicApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DD56D2D528C49C9C008B6A2A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DD56D2D628C49CB1008B6A2A /* Main */,
+				DD56D2DA28C49D03008B6A2A /* Playback */,
+				DD56D2D728C49CE0008B6A2A /* Library */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DD56D2D628C49CB1008B6A2A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DD258B4928BD215A00B4077D /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DD56D2D728C49CE0008B6A2A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				DD56D2D928C49CF0008B6A2A /* Model */,
+				DD56D2D828C49CEC008B6A2A /* View */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		DD56D2D828C49CEC008B6A2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD69D61928BA397C00E0B0A7 /* LibraryView.swift */,
+				DD258B3F28BCEB7300B4077D /* LibraryListView.swift */,
+				DD258B4728BCFB6000B4077D /* LibraryRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		DD258B4228BCF1C200B4077D /* Model */ = {
+		DD56D2D928C49CF0008B6A2A /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				DD258B4328BCF1DC00B4077D /* LibraryRow.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DD56D2DA28C49D03008B6A2A /* Playback */ = {
+			isa = PBXGroup;
+			children = (
+				DD69D61B28BA6BE600E0B0A7 /* PlaybackView.swift */,
+			);
+			path = Playback;
 			sourceTree = "<group>";
 		};
 		DD69D5FD28BA37FC00E0B0A7 = {
@@ -78,12 +140,8 @@
 		DD69D60828BA37FC00E0B0A7 /* AppleMusic */ = {
 			isa = PBXGroup;
 			children = (
-				DD69D60928BA37FC00E0B0A7 /* AppleMusicApp.swift */,
-				DD258B4928BD215A00B4077D /* ContentView.swift */,
-				DD258B4228BCF1C200B4077D /* Model */,
-				DD258B4128BCEB7800B4077D /* View */,
-				DD69D60D28BA37FD00E0B0A7 /* Assets.xcassets */,
-				DD69D60F28BA37FD00E0B0A7 /* Preview Content */,
+				DD56D2D328C49C87008B6A2A /* Sources */,
+				DD56D2D228C49C7D008B6A2A /* Resources */,
 			);
 			path = AppleMusic;
 			sourceTree = "<group>";
@@ -94,24 +152,6 @@
 				DD69D61028BA37FD00E0B0A7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		DDD9A3CC28BE4FDB008854CF /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				DD69D61928BA397C00E0B0A7 /* LibraryView.swift */,
-				DD258B3F28BCEB7300B4077D /* LibraryListView.swift */,
-				DD258B4728BCFB6000B4077D /* LibraryRowView.swift */,
-			);
-			path = Library;
-			sourceTree = "<group>";
-		};
-		DDD9A3CD28BE5D58008854CF /* Playback */ = {
-			isa = PBXGroup;
-			children = (
-				DD69D61B28BA6BE600E0B0A7 /* PlaybackView.swift */,
-			);
-			path = Playback;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,7 +226,7 @@
 			files = (
 				DD258B4428BCF1DC00B4077D /* LibraryRow.swift in Sources */,
 				DD258B4028BCEB7300B4077D /* LibraryListView.swift in Sources */,
-				DD258B4A28BD215A00B4077D /* ContentView.swift in Sources */,
+				DD258B4A28BD215A00B4077D /* MainView.swift in Sources */,
 				DD69D61A28BA397C00E0B0A7 /* LibraryView.swift in Sources */,
 				DD69D61C28BA6BE600E0B0A7 /* PlaybackView.swift in Sources */,
 				DD69D60A28BA37FC00E0B0A7 /* AppleMusicApp.swift in Sources */,
@@ -318,7 +358,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AppleMusic/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AppleMusic/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 7CZSM4DJ6N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -347,7 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AppleMusic/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AppleMusic/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 7CZSM4DJ6N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

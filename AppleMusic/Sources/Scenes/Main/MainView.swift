@@ -17,12 +17,14 @@ struct MainView: View {
                         Image(systemName: "music.note")
                         Text("Медиатека")
                     }
-
-                Text("Радио")
-                    .tabItem {
-                        Image(systemName: "dot.radiowaves.left.and.right")
-                        Text("Радио")
-                    }
+                
+                NavigationView {
+                    RadioView()
+                }
+                .tabItem {
+                    Image(systemName: "dot.radiowaves.left.and.right")
+                    Text("Радио")
+                }
 
                 Text("Поиск")
                     .tabItem {

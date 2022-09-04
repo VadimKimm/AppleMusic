@@ -11,6 +11,7 @@
 		DD258B4428BCF1DC00B4077D /* LibraryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B4328BCF1DC00B4077D /* LibraryRow.swift */; };
 		DD258B4828BCFB6000B4077D /* LibraryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B4728BCFB6000B4077D /* LibraryRowView.swift */; };
 		DD258B4A28BD215A00B4077D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B4928BD215A00B4077D /* MainView.swift */; };
+		DD56D2E028C49EFF008B6A2A /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD56D2DF28C49EFF008B6A2A /* RadioView.swift */; };
 		DD56D2E228C4EA13008B6A2A /* RadioTopSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD56D2E128C4EA13008B6A2A /* RadioTopSectionView.swift */; };
 		DD56D2E428C4EB96008B6A2A /* RadioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD56D2E328C4EB96008B6A2A /* RadioModel.swift */; };
 		DD56D2E628C4FAF1008B6A2A /* RadioBottomSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD56D2E528C4FAF1008B6A2A /* RadioBottomSectionView.swift */; };
@@ -26,6 +27,7 @@
 		DD258B4328BCF1DC00B4077D /* LibraryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRow.swift; sourceTree = "<group>"; };
 		DD258B4728BCFB6000B4077D /* LibraryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRowView.swift; sourceTree = "<group>"; };
 		DD258B4928BD215A00B4077D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DD56D2DF28C49EFF008B6A2A /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
 		DD56D2E128C4EA13008B6A2A /* RadioTopSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioTopSectionView.swift; sourceTree = "<group>"; };
 		DD56D2E328C4EB96008B6A2A /* RadioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioModel.swift; sourceTree = "<group>"; };
 		DD56D2E528C4FAF1008B6A2A /* RadioBottomSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioBottomSectionView.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		DD56D2DC28C49EEA008B6A2A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DD56D2DF28C49EFF008B6A2A /* RadioView.swift */,
 				DD56D2E128C4EA13008B6A2A /* RadioTopSectionView.swift */,
 				DD56D2E528C4FAF1008B6A2A /* RadioBottomSectionView.swift */,
 			);
@@ -262,6 +265,7 @@
 				DD258B4A28BD215A00B4077D /* MainView.swift in Sources */,
 				DD56D2E428C4EB96008B6A2A /* RadioModel.swift in Sources */,
 				DD69D61A28BA397C00E0B0A7 /* LibraryView.swift in Sources */,
+				DD56D2E028C49EFF008B6A2A /* RadioView.swift in Sources */,
 				DD69D61C28BA6BE600E0B0A7 /* PlaybackView.swift in Sources */,
 				DD69D60A28BA37FC00E0B0A7 /* AppleMusicApp.swift in Sources */,
 				DD258B4828BCFB6000B4077D /* LibraryRowView.swift in Sources */,

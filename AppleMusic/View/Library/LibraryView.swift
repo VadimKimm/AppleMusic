@@ -11,24 +11,28 @@ struct LibraryView: View {
 
     @State var isEditMode = false
 
+    var initialView: some View {
+        ZStack {
+            VStack {
+                Text("Ищете свою музыку?")
+                    .font(.title2)
+                    .bold()
+
+                Text("Здесь появится купленная Вами в\n iTunes Store музыка.")
+                    .font(.callout)
+                    .foregroundColor(.gray)
+                    .multilineTextAlignment(.center)
+            }
+        }
+    }
+
     var body: some View {
         NavigationView {
             VStack {
                 if isEditMode {
                     LibraryListView()
                 } else {
-                    ZStack {
-                        VStack {
-                            Text("Ищете свою музыку?")
-                                .font(.title2)
-                                .bold()
-
-                            Text("Здесь появится купленная Вами в\n iTunes Store музыка.")
-                                .font(.callout)
-                                .foregroundColor(.gray)
-                                .multilineTextAlignment(.center)
-                        }
-                    }
+                    initialView
                 }
             }
             .navigationTitle("Медиатека")

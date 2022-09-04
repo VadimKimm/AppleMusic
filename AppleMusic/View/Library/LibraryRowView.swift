@@ -15,6 +15,8 @@ struct LibraryRowView: View {
     var body: some View {
         HStack(spacing: 15) {
             Image(systemName: libraryItem.imageName)
+                .resizable()
+                .frame(width: Metrics.imageWidth, height: Metrics.imageWidth)
                 .foregroundColor(.red)
             Text(libraryItem.title)
                 .font(.title3)
@@ -31,5 +33,11 @@ struct LibraryRowView_Previews: PreviewProvider {
         LibraryRowView(libraryItem: LibraryRow(title: "Плейлисты", imageName: "music.mic")) {
         }
         .previewLayout(.fixed(width: 300, height: 50))
+    }
+}
+
+extension LibraryRowView {
+    enum Metrics {
+        static let imageWidth: CGFloat = 20
     }
 }

@@ -50,6 +50,6 @@ struct ContentView_Previews: PreviewProvider {
 
 extension MainView {
     enum Metrics {
-        static let PlaybackViewYOffset: CGFloat = -50
+        static let PlaybackViewYOffset: CGFloat = -47
     }
 }

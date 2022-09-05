@@ -14,7 +14,6 @@ struct LibraryRow: Identifiable, Hashable {
     var isSelected = false
 }
 
-
 extension LibraryRow {
     static func getData() -> [LibraryRow] {
         let libraryItems = [

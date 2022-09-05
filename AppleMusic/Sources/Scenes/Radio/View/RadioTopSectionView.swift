@@ -13,7 +13,7 @@ struct RadioTopSectionView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Text(radioItem.category?.rawValue ?? "Error")
+            Text(radioItem.category.rawValue)
                 .foregroundColor(.secondary)
                 .textCase(.uppercase)
                 .font(.caption)
@@ -27,10 +27,12 @@ struct RadioTopSectionView: View {
                 .font(.caption)
 
             ZStack(alignment: .bottomLeading) {
-                Image(radioItem.imageName)
-                    .resizable()
-                    .scaledToFit()
-                    .cornerRadius(Metrics.imageCornerRadius)
+                if let imageName = radioItem.imageName {
+                    Image(imageName)
+                        .resizable()
+                        .scaledToFit()
+                        .cornerRadius(Metrics.imageCornerRadius)
+                }
 
                 if let description = radioItem.description {
                     Text(description)

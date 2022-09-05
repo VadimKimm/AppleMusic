@@ -9,11 +9,11 @@ import Foundation
 
 struct RadioModel: Identifiable, Hashable {
     let id = UUID()
-    let category: Categories?
+    let category: Categories
     let title: String
     let subtitle: String
     let description: String?
-    let imageName: String
+    let imageName: String?
     let stationImageName: String?
 
     enum Categories: String {
@@ -21,7 +21,6 @@ struct RadioModel: Identifiable, Hashable {
         case favorite = "Избранная радиостанция"
     }
 }
-
 
 extension RadioModel {
     static func getPreviewData() -> [RadioModel] {

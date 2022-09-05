@@ -15,11 +15,13 @@ struct RadioBottomSectionView: View {
         VStack(alignment: .leading) {
 
             HStack(alignment: .center, spacing: Metrics.hStackSpacing) {
-                Image(radioItem.stationImageName ?? "raplife")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 100, height: 100)
-                    .cornerRadius(Metrics.imageCornerRadius)
+                if let stationImageName = radioItem.stationImageName {
+                    Image(stationImageName)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 100, height: 100)
+                        .cornerRadius(Metrics.imageCornerRadius)
+                }
 
                 VStack(alignment: .leading) {
                     Text(radioItem.title)
@@ -32,7 +34,6 @@ struct RadioBottomSectionView: View {
             .padding(.horizontal, Metrics.padding)
             
             Divider()
-            
         }
     }
 }

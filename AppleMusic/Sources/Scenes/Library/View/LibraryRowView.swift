@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LibraryRowView: View {
 
-    var libraryItem: LibraryRow
+    var libraryItem: LibraryModel
     let onTap: (() -> ())?
 
     var body: some View {
@@ -30,7 +30,7 @@ struct LibraryRowView: View {
 
 struct LibraryRowView_Previews: PreviewProvider {
     static var previews: some View {
-        LibraryRowView(libraryItem: LibraryRow(title: "Плейлисты", imageName: "music.mic")) {
+        LibraryRowView(libraryItem: LibraryModel(title: "Плейлисты", imageName: "music.mic")) {
         }
         .previewLayout(.fixed(width: 300, height: 50))
     }

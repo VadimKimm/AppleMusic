@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DD258B4028BCEB7300B4077D /* LibraryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B3F28BCEB7300B4077D /* LibraryListView.swift */; };
-		DD258B4428BCF1DC00B4077D /* LibraryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B4328BCF1DC00B4077D /* LibraryRow.swift */; };
+		DD258B4428BCF1DC00B4077D /* LibraryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B4328BCF1DC00B4077D /* LibraryModel.swift */; };
 		DD258B4828BCFB6000B4077D /* LibraryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B4728BCFB6000B4077D /* LibraryRowView.swift */; };
 		DD258B4A28BD215A00B4077D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258B4928BD215A00B4077D /* MainView.swift */; };
 		DD56D2E028C49EFF008B6A2A /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD56D2DF28C49EFF008B6A2A /* RadioView.swift */; };
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		DD258B3F28BCEB7300B4077D /* LibraryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryListView.swift; sourceTree = "<group>"; };
-		DD258B4328BCF1DC00B4077D /* LibraryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRow.swift; sourceTree = "<group>"; };
+		DD258B4328BCF1DC00B4077D /* LibraryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryModel.swift; sourceTree = "<group>"; };
 		DD258B4728BCFB6000B4077D /* LibraryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRowView.swift; sourceTree = "<group>"; };
 		DD258B4928BD215A00B4077D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DD56D2DF28C49EFF008B6A2A /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 		DD56D2D928C49CF0008B6A2A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DD258B4328BCF1DC00B4077D /* LibraryRow.swift */,
+				DD258B4328BCF1DC00B4077D /* LibraryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,7 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD258B4428BCF1DC00B4077D /* LibraryRow.swift in Sources */,
+				DD258B4428BCF1DC00B4077D /* LibraryModel.swift in Sources */,
 				DD258B4028BCEB7300B4077D /* LibraryListView.swift in Sources */,
 				DD258B4A28BD215A00B4077D /* MainView.swift in Sources */,
 				DD56D2E428C4EB96008B6A2A /* RadioModel.swift in Sources */,

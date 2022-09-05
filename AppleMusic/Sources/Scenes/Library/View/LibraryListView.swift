@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LibraryListView: View {
 
-    @State private var libraryItems = LibraryRow.getData()
+    @State private var libraryItems = LibraryModel.getData()
     @State private var selectedItems = Set<UUID>()
 
     var body: some View {

@@ -34,7 +34,7 @@ struct PlaybackView: View {
                 } label: {
                     Image(systemName: "play.fill")
                         .font(.title)
-                        .foregroundColor(.black)
+                        .foregroundColor(.primary)
                 }
 
                 Button {
@@ -42,10 +42,11 @@ struct PlaybackView: View {
                 } label: {
                     Image(systemName: "forward.fill")
                         .font(.title)
-                        .foregroundColor(.black)
+                        .foregroundColor(.primary)
                         .padding()
                 }
             }
+            .background(.bar)
         }
     }
 }

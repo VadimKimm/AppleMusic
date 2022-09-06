@@ -19,7 +19,7 @@ struct RadioBottomSectionView: View {
                     Image(stationImageName)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 100, height: 100)
+                        .frame(width: Metrics.frameWidth, height: Metrics.frameHeight)
                         .cornerRadius(Metrics.imageCornerRadius)
                 }
 
@@ -48,5 +48,7 @@ extension RadioBottomSectionView {
         static let imageCornerRadius: CGFloat = 5
         static let hStackSpacing: CGFloat = 20
         static let padding: CGFloat = 8
+        static let frameWidth: CGFloat = 100
+        static let frameHeight: CGFloat = 100
     }
 }

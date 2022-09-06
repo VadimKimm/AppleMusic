@@ -25,7 +25,7 @@ struct RadioView: View {
                             RadioTopSectionView(radioItem: item)
                         }
                     }
-                    .frame(width: UIScreen.main.bounds.width - 16, height: UIScreen.main.bounds.height / 3)
+                    .frame(width: Metrics.frameWidth, height: Metrics.frameHeight)
                     .tabViewStyle(.page(indexDisplayMode: .never))
                 }
             }
@@ -64,5 +64,7 @@ extension RadioView {
     enum Metrics {
         static let padding: CGFloat = 8
         static let spacerMinLength: CGFloat = 80
+        static let frameWidth: CGFloat = UIScreen.main.bounds.width - 16
+        static let frameHeight: CGFloat = UIScreen.main.bounds.height / 3
     }
 }

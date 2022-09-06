@@ -32,7 +32,6 @@ struct RadioTopSectionView: View {
                 if let imageName = radioItem.imageName {
                     Image(imageName)
                         .resizable()
-                        .scaledToFill()
                         .cornerRadius(Metrics.imageCornerRadius)
                 }
 
@@ -51,7 +50,8 @@ struct RadioTopSectionView: View {
 struct RadioTopSectionView_Previews: PreviewProvider {
     static var previews: some View {
         RadioTopSectionView(radioItem: RadioModel.getPreviewData()[0])
-            .frame(width: UIScreen.main.bounds.width - 16, height: UIScreen.main.bounds.width / 3)
+            .frame(width: UIScreen.main.bounds.width - 16,
+                   height: UIScreen.main.bounds.height / 3)
     }
 }
 

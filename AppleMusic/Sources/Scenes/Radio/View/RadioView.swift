@@ -50,7 +50,6 @@ struct RadioView: View {
         }
         .padding(.horizontal, Metrics.padding)
         .navigationTitle("Радио")
-        .navigationViewStyle(.columns)
     }
 }
 

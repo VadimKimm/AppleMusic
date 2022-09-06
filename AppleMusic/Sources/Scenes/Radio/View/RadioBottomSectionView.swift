@@ -33,6 +33,7 @@ struct RadioBottomSectionView: View {
             }
             
             Divider()
+                .padding(.leading, Metrics.dividerPadding)
         }
     }
 }
@@ -50,5 +51,6 @@ extension RadioBottomSectionView {
         static let padding: CGFloat = 8
         static let frameWidth: CGFloat = 100
         static let frameHeight: CGFloat = 100
+        static let dividerPadding: CGFloat = frameWidth + hStackSpacing
     }
 }

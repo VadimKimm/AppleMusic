@@ -46,7 +46,7 @@ struct RadioBottomSectionView_Previews: PreviewProvider {
 
 extension RadioBottomSectionView {
     enum Metrics {
-        static let imageCornerRadius: CGFloat = 10
+        static let imageCornerRadius: CGFloat = 5
         static let hStackSpacing: CGFloat = 20
         static let padding: CGFloat = 8
     }

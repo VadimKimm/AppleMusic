@@ -54,7 +54,7 @@ struct RadioTopSectionView_Previews: PreviewProvider {
 
 extension RadioTopSectionView {
     enum Metrics {
-        static let imageCornerRadius: CGFloat = 10
+        static let imageCornerRadius: CGFloat = 5
         static let padding: CGFloat = 8
     }
 }

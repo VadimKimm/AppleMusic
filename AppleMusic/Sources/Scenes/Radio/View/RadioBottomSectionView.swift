@@ -31,7 +31,6 @@ struct RadioBottomSectionView: View {
                         .font(.caption)
                 }
             }
-            .padding(.horizontal, Metrics.padding)
             
             Divider()
         }

@@ -13,6 +13,8 @@ struct RadioTopSectionView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
+            Divider()
+            
             Text(radioItem.category.rawValue)
                 .foregroundColor(.secondary)
                 .textCase(.uppercase)

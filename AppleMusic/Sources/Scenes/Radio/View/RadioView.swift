@@ -21,10 +21,14 @@ struct RadioView: View {
 
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: rows) {
-                    ForEach(topSectionRadioItems) { item in
-                        RadioTopSectionView(radioItem: item)
+                    TabView {
+                        ForEach(topSectionRadioItems) { item in
+                            RadioTopSectionView(radioItem: item)
+                        }
                     }
-                    .frame(width: UIScreen.main.bounds.width - 16)
+                    .frame(width: UIScreen.main.bounds.width - 16, height: UIScreen.main.bounds.height / 3)
+                    .tabViewStyle(.page(indexDisplayMode: .never))
+                    .aspectRatio(contentMode: .fit)
                 }
             }
 

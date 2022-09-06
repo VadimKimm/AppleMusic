@@ -17,37 +17,39 @@ struct RadioView: View {
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            Divider()
 
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: rows) {
-                    ForEach(topSectionRadioItems) { item in
-                        RadioTopSectionView(radioItem: item)
+                    TabView {
+                        ForEach(topSectionRadioItems) { item in
+                            RadioTopSectionView(radioItem: item)
+                        }
                     }
-                    .frame(width: UIScreen.main.bounds.width - 16)
+                    .frame(width: Metrics.frameWidth, height: Metrics.frameHeight)
+                    .tabViewStyle(.page(indexDisplayMode: .never))
                 }
             }
 
             Divider()
+                .padding(.all, Metrics.padding)
 
             LazyVGrid(columns: columns) {
                 VStack(alignment: .leading) {
                     Text("Станции")
                         .font(.title2)
                         .bold()
-                        .padding(.horizontal, Metrics.padding)
 
                     ForEach(bottomSectionRadioItems) { item in
                         RadioBottomSectionView(radioItem: item)
                     }
                 }
             }
+            .padding(.horizontal, Metrics.padding)
 
             Spacer(minLength: Metrics.spacerMinLength)
         }
         .padding(.horizontal, Metrics.padding)
         .navigationTitle("Радио")
-        .navigationViewStyle(.columns)
     }
 }
 
@@ -60,6 +62,8 @@ struct RadioView_Previews: PreviewProvider {
 extension RadioView {
     enum Metrics {
         static let padding: CGFloat = 8
-        static let spacerMinLength: CGFloat = 70
+        static let spacerMinLength: CGFloat = 80
+        static let frameWidth: CGFloat = UIScreen.main.bounds.width - 16
+        static let frameHeight: CGFloat = UIScreen.main.bounds.height / 3
     }
 }

@@ -19,7 +19,7 @@ struct RadioBottomSectionView: View {
                     Image(stationImageName)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 100, height: 100)
+                        .frame(width: Metrics.frameWidth, height: Metrics.frameHeight)
                         .cornerRadius(Metrics.imageCornerRadius)
                 }
 
@@ -31,9 +31,9 @@ struct RadioBottomSectionView: View {
                         .font(.caption)
                 }
             }
-            .padding(.horizontal, Metrics.padding)
             
             Divider()
+                .padding(.leading, Metrics.dividerPadding)
         }
     }
 }
@@ -46,8 +46,11 @@ struct RadioBottomSectionView_Previews: PreviewProvider {
 
 extension RadioBottomSectionView {
     enum Metrics {
-        static let imageCornerRadius: CGFloat = 10
+        static let imageCornerRadius: CGFloat = 5
         static let hStackSpacing: CGFloat = 20
         static let padding: CGFloat = 8
+        static let frameWidth: CGFloat = 100
+        static let frameHeight: CGFloat = 100
+        static let dividerPadding: CGFloat = frameWidth + hStackSpacing
     }
 }

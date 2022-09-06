@@ -13,6 +13,8 @@ struct RadioTopSectionView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
+            Divider()
+            
             Text(radioItem.category.rawValue)
                 .foregroundColor(.secondary)
                 .textCase(.uppercase)
@@ -30,7 +32,6 @@ struct RadioTopSectionView: View {
                 if let imageName = radioItem.imageName {
                     Image(imageName)
                         .resizable()
-                        .scaledToFit()
                         .cornerRadius(Metrics.imageCornerRadius)
                 }
 
@@ -49,12 +50,14 @@ struct RadioTopSectionView: View {
 struct RadioTopSectionView_Previews: PreviewProvider {
     static var previews: some View {
         RadioTopSectionView(radioItem: RadioModel.getPreviewData()[0])
+            .frame(width: UIScreen.main.bounds.width - 16,
+                   height: UIScreen.main.bounds.height / 3)
     }
 }
 
 extension RadioTopSectionView {
     enum Metrics {
-        static let imageCornerRadius: CGFloat = 10
+        static let imageCornerRadius: CGFloat = 5
         static let padding: CGFloat = 8
     }
 }

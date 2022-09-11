@@ -20,6 +20,7 @@
 		DD69D61128BA37FD00E0B0A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD69D61028BA37FD00E0B0A7 /* Preview Assets.xcassets */; };
 		DD69D61A28BA397C00E0B0A7 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD69D61928BA397C00E0B0A7 /* LibraryView.swift */; };
 		DD69D61C28BA6BE600E0B0A7 /* PlaybackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD69D61B28BA6BE600E0B0A7 /* PlaybackView.swift */; };
+		DD83147928CE2E0A00EF9EF7 /* SearchCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83147828CE2E0A00EF9EF7 /* SearchCategoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		DD69D61028BA37FD00E0B0A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DD69D61928BA397C00E0B0A7 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		DD69D61B28BA6BE600E0B0A7 /* PlaybackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackView.swift; sourceTree = "<group>"; };
+		DD83147828CE2E0A00EF9EF7 /* SearchCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				DD56D2DA28C49D03008B6A2A /* Playback */,
 				DD56D2D728C49CE0008B6A2A /* Library */,
 				DD56D2DB28C49EA0008B6A2A /* Radio */,
+				DD8388D728CCCC0800F0F846 /* Search */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -190,6 +193,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DD83147728CE2DF200EF9EF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD83147828CE2E0A00EF9EF7 /* SearchCategoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD8388D728CCCC0800F0F846 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DD83147728CE2DF200EF9EF7 /* Model */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,6 +288,7 @@
 				DD69D61C28BA6BE600E0B0A7 /* PlaybackView.swift in Sources */,
 				DD69D60A28BA37FC00E0B0A7 /* AppleMusicApp.swift in Sources */,
 				DD258B4828BCFB6000B4077D /* LibraryRowView.swift in Sources */,
+				DD83147928CE2E0A00EF9EF7 /* SearchCategoryModel.swift in Sources */,
 				DD56D2E228C4EA13008B6A2A /* RadioTopSectionView.swift in Sources */,
 				DD56D2E628C4FAF1008B6A2A /* RadioBottomSectionView.swift in Sources */,
 			);

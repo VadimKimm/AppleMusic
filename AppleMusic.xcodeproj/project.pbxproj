@@ -20,6 +20,7 @@
 		DD69D61128BA37FD00E0B0A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD69D61028BA37FD00E0B0A7 /* Preview Assets.xcassets */; };
 		DD69D61A28BA397C00E0B0A7 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD69D61928BA397C00E0B0A7 /* LibraryView.swift */; };
 		DD69D61C28BA6BE600E0B0A7 /* PlaybackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD69D61B28BA6BE600E0B0A7 /* PlaybackView.swift */; };
+		DD83147628CE2DAE00EF9EF7 /* SearchCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83147528CE2DAE00EF9EF7 /* SearchCategoryView.swift */; };
 		DD83147928CE2E0A00EF9EF7 /* SearchCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83147828CE2E0A00EF9EF7 /* SearchCategoryModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		DD69D61028BA37FD00E0B0A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DD69D61928BA397C00E0B0A7 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		DD69D61B28BA6BE600E0B0A7 /* PlaybackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackView.swift; sourceTree = "<group>"; };
+		DD83147528CE2DAE00EF9EF7 /* SearchCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoryView.swift; sourceTree = "<group>"; };
 		DD83147828CE2E0A00EF9EF7 /* SearchCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -205,8 +207,17 @@
 			isa = PBXGroup;
 			children = (
 				DD83147728CE2DF200EF9EF7 /* Model */,
+				DD8388D828CCCC2C00F0F846 /* View */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		DD8388D828CCCC2C00F0F846 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD83147528CE2DAE00EF9EF7 /* SearchCategoryView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 				DD69D61A28BA397C00E0B0A7 /* LibraryView.swift in Sources */,
 				DD56D2E028C49EFF008B6A2A /* RadioView.swift in Sources */,
 				DD69D61C28BA6BE600E0B0A7 /* PlaybackView.swift in Sources */,
+				DD83147628CE2DAE00EF9EF7 /* SearchCategoryView.swift in Sources */,
 				DD69D60A28BA37FC00E0B0A7 /* AppleMusicApp.swift in Sources */,
 				DD258B4828BCFB6000B4077D /* LibraryRowView.swift in Sources */,
 				DD83147928CE2E0A00EF9EF7 /* SearchCategoryModel.swift in Sources */,

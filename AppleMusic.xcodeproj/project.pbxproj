@@ -22,6 +22,7 @@
 		DD69D61C28BA6BE600E0B0A7 /* PlaybackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD69D61B28BA6BE600E0B0A7 /* PlaybackView.swift */; };
 		DD83147628CE2DAE00EF9EF7 /* SearchCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83147528CE2DAE00EF9EF7 /* SearchCategoryView.swift */; };
 		DD83147928CE2E0A00EF9EF7 /* SearchCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83147828CE2E0A00EF9EF7 /* SearchCategoryModel.swift */; };
+		DD8388DA28CCCCEC00F0F846 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8388D928CCCCEC00F0F846 /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		DD69D61B28BA6BE600E0B0A7 /* PlaybackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackView.swift; sourceTree = "<group>"; };
 		DD83147528CE2DAE00EF9EF7 /* SearchCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoryView.swift; sourceTree = "<group>"; };
 		DD83147828CE2E0A00EF9EF7 /* SearchCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoryModel.swift; sourceTree = "<group>"; };
+		DD8388D928CCCCEC00F0F846 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 		DD8388D828CCCC2C00F0F846 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DD8388D928CCCCEC00F0F846 /* SearchView.swift */,
 				DD83147528CE2DAE00EF9EF7 /* SearchCategoryView.swift */,
 			);
 			path = View;
@@ -294,6 +297,7 @@
 				DD258B4028BCEB7300B4077D /* LibraryListView.swift in Sources */,
 				DD258B4A28BD215A00B4077D /* MainView.swift in Sources */,
 				DD56D2E428C4EB96008B6A2A /* RadioModel.swift in Sources */,
+				DD8388DA28CCCCEC00F0F846 /* SearchView.swift in Sources */,
 				DD69D61A28BA397C00E0B0A7 /* LibraryView.swift in Sources */,
 				DD56D2E028C49EFF008B6A2A /* RadioView.swift in Sources */,
 				DD69D61C28BA6BE600E0B0A7 /* PlaybackView.swift in Sources */,

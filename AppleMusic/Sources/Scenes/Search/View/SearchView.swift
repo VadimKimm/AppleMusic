@@ -10,8 +10,7 @@ import SwiftUI
 struct SearchView: View {
 
     @State private var searchText = ""
-    @State private var searchTextPlaceholder = "Ваша медиатека"
-    @State private var categoryItems = SearchCategoryModel.getData()
+    @ObservedObject private var model = ModelData()
 
     let columns = Array(repeating: GridItem(.flexible(), spacing: Metrics.columnsSpacing), count: 2)
 
@@ -38,9 +37,9 @@ struct SearchView: View {
                         .bold()
 
                     LazyVGrid(columns: columns) {
-                        ForEach(categoryItems) { item in
+                        ForEach(model.searchCategories) { item in
                             NavigationLink {
-                                Text(item.title)
+                                SearchDetailView(model: model, title: item.title)
                             } label: {
                                 SearchCategoryView(categoryItem: item)
                             }
@@ -61,6 +60,7 @@ struct SearchView: View {
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
         SearchView()
+            .previewInterfaceOrientation(.portrait)
     }
 }
 

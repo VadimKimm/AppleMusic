@@ -19,7 +19,7 @@ extension SearchCategoryModel {
             SearchCategoryModel(title: "Альтернатива", imageName: "alternative"),
             SearchCategoryModel(title: "Классика", imageName: "classic"),
             SearchCategoryModel(title: "Спокойствие", imageName: "feelGood"),
-            SearchCategoryModel(title: "Привет Сири, включи музыку", imageName: "heySiri"),
+            SearchCategoryModel(title: "Привет Сири", imageName: "heySiri"),
             SearchCategoryModel(title: "Хип-хоп", imageName: "hipHop"),
             SearchCategoryModel(title: "Мотивация", imageName: "motivation"),
             SearchCategoryModel(title: "Поп", imageName: "popp"),

@@ -79,7 +79,9 @@
 		DD42010128D1E018007BB9E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DD42010B28D22ED2007BB9E6 /* SearchDetailHeaderView.swift */,
 				DD42010E28D23001007BB9E6 /* SearchDetailTopSectionView.swift */,
+				DD42011028D231FA007BB9E6 /* SearchDetailBottomSectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				DD42010528D1E4E6007BB9E6 /* SearchDetailTopSectionCellView.swift */,
+				DD42010728D1E85F007BB9E6 /* SearchDetailBottomSectionCellView.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -344,11 +347,14 @@
 				DD258B4A28BD215A00B4077D /* MainView.swift in Sources */,
 				DD56D2E428C4EB96008B6A2A /* RadioModel.swift in Sources */,
 				DD8388DA28CCCCEC00F0F846 /* SearchView.swift in Sources */,
+				DD42010828D1E85F007BB9E6 /* SearchDetailBottomSectionCellView.swift in Sources */,
+				DD42011128D231FA007BB9E6 /* SearchDetailBottomSectionView.swift in Sources */,
 				DD42010428D1E102007BB9E6 /* ModelData.swift in Sources */,
 				DD69D61A28BA397C00E0B0A7 /* LibraryView.swift in Sources */,
 				DD56D2E028C49EFF008B6A2A /* RadioView.swift in Sources */,
 				DD69D61C28BA6BE600E0B0A7 /* PlaybackView.swift in Sources */,
 				DD42010F28D23001007BB9E6 /* SearchDetailTopSectionView.swift in Sources */,
+				DD42010C28D22ED2007BB9E6 /* SearchDetailHeaderView.swift in Sources */,
 				DD83147628CE2DAE00EF9EF7 /* SearchCategoryView.swift in Sources */,
 				DD42010628D1E4E6007BB9E6 /* SearchDetailTopSectionCellView.swift in Sources */,
 				DD69D60A28BA37FC00E0B0A7 /* AppleMusicApp.swift in Sources */,

@@ -1,13 +1,17 @@
 //
-//  PlaybackView.swift
+//  PlayerView.swift
 //  AppleMusic
 //
-//  Created by Vadim Kim on 27.08.2022.
+//  Created by Vadim Kim on 15.09.2022.
 //
 
 import SwiftUI
 
-struct PlaybackView: View {
+struct PlayerView: View {
+
+    @State private var isFullScreenPlayer = false
+    @State var isPlaying = false
+
     var body: some View {
         VStack {
             Spacer()
@@ -15,10 +19,11 @@ struct PlaybackView: View {
             HStack {
                 Image("albumImage")
                     .resizable()
-                    .frame(width: 50, height: 50, alignment: .center)
-                    .cornerRadius(10)
+                    .frame(width: Metrics.imageFrameWidth, height: Metrics.imageFrameWidth,
+                           alignment: .center)
+                    .cornerRadius(Metrics.imageCornerRadius)
                     .padding()
-                
+
                 VStack(alignment: .leading) {
                     Text("Travis Scott")
                         .font(.headline)
@@ -30,9 +35,9 @@ struct PlaybackView: View {
                 Spacer()
 
                 Button() {
-                    print("Pause button pressed")
+                    isPlaying.toggle()
                 } label: {
-                    Image(systemName: "play.fill")
+                    Image(systemName: isPlaying ? "play.fill" : "pause.fill")
                         .font(.title)
                         .foregroundColor(.primary)
                 }
@@ -48,11 +53,24 @@ struct PlaybackView: View {
             }
             .background(.bar)
         }
+        .onTapGesture {
+            isFullScreenPlayer.toggle()
+        }
+        .fullScreenCover(isPresented: $isFullScreenPlayer) {
+            PlayerDetailView(isPlaying: $isPlaying)
+        }
     }
 }
 
-struct PlaybackView_Previews: PreviewProvider {
+struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        PlaybackView()
+        PlayerView()
+    }
+}
+
+extension PlayerView {
+    enum Metrics {
+        static let imageCornerRadius: CGFloat = 10
+        static let imageFrameWidth: CGFloat = 50
     }
 }

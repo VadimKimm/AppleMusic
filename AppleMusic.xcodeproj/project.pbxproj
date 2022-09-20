@@ -30,6 +30,7 @@
 		DD83147928CE2E0A00EF9EF7 /* SearchCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83147828CE2E0A00EF9EF7 /* SearchCategoryModel.swift */; };
 		DD8388DA28CCCCEC00F0F846 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8388D928CCCCEC00F0F846 /* SearchView.swift */; };
 		DDCD766028D0D3C600F637CE /* SearchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD765F28D0D3C600F637CE /* SearchDetailView.swift */; };
+		DDFF8FE428DA22E000E826EE /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF8FE328DA22E000E826EE /* Color+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		DD83147828CE2E0A00EF9EF7 /* SearchCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoryModel.swift; sourceTree = "<group>"; };
 		DD8388D928CCCCEC00F0F846 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		DDCD765F28D0D3C600F637CE /* SearchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailView.swift; sourceTree = "<group>"; };
+		DDFF8FE328DA22E000E826EE /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,15 @@
 				DD42010728D1E85F007BB9E6 /* SearchDetailBottomSectionCellView.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		DD42011628D3AD45007BB9E6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF8FE228DA22D000E826EE /* Extension */,
+				DD42010228D1E0D5007BB9E6 /* Model */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		DD56D2D228C49C7D008B6A2A /* Resources */ = {
@@ -268,6 +279,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DDFF8FE228DA22D000E826EE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF8FE328DA22E000E826EE /* Color+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDFF8FE428DA22E000E826EE /* Color+Ext.swift in Sources */,
 				DD258B4428BCF1DC00B4077D /* LibraryModel.swift in Sources */,
 				DD258B4028BCEB7300B4077D /* LibraryListView.swift in Sources */,
 				DD258B4A28BD215A00B4077D /* MainView.swift in Sources */,

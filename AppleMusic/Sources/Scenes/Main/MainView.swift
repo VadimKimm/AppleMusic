@@ -33,7 +33,7 @@ struct MainView: View {
             }
             .accentColor(.red)
 
-            PlaybackView()
+            PlayerView()
                 .offset(y: Metrics.PlaybackViewYOffset)
         }
     }

@@ -44,7 +44,5 @@ extension SearchDetailBottomSectionCellView {
     enum Metrics {
         static let imageCornerRadius: CGFloat = 5
         static let padding: CGFloat = 8
-        static let frameWidth: CGFloat = UIScreen.main.bounds.width / 2
-        static let frameHeight: CGFloat = frameWidth
     }
 }

@@ -12,7 +12,7 @@ struct SearchView: View {
     @Binding var isSearchBarActive: Bool
     @ObservedObject private var model = ModelData()
     @State private var searchText = ""
-    @State private var selectedSearch = 1
+    @State private var selectedSearchTag = 0
     @State private var searchPlaceholder = "Ваша медиатека"
 
     let columns = [
@@ -23,7 +23,7 @@ struct SearchView: View {
 
     var body: some View {
         NavigationView {
-            ScrollView {
+            ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .leading) {
                     Divider()
 
@@ -53,11 +53,11 @@ struct SearchView: View {
                         prompt: $searchPlaceholder.wrappedValue) {
 
                 VStack(alignment: .leading) {
-                    Picker("SearchSource", selection: $selectedSearch) {
+                    Picker("SearchSource", selection: $selectedSearchTag) {
                         Text("Apple Music").tag(0)
                         Text("Ваша медиатека").tag(1)
                     }
-                    .onChange(of: selectedSearch) { tag in
+                    .onChange(of: selectedSearchTag) { tag in
                         if tag == 0 {
                             searchPlaceholder = "Артисты, песни, тексты и др."
                         } else {

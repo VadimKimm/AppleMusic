@@ -17,11 +17,8 @@ struct SearchDetailView: View {
         ScrollView(.vertical, showsIndicators: false) {
             
             SearchDetailTopSectionView(model: model)
-
             SearchDetailBottomSectionView(model: model, title: title, isTwoRow: false)
-
             SearchDetailMiddleSectionView(model: model)
-
             SearchDetailBottomSectionView(model: model, title: "Плэйлисты", isTwoRow: true)
 
             Divider()
@@ -44,7 +41,5 @@ extension SearchDetailView {
     enum Metrics {
         static let padding: CGFloat = 8
         static let spacerMinLength: CGFloat = 80
-        static let frameWidth: CGFloat = UIScreen.main.bounds.width - 16
-        static let frameHeight: CGFloat = UIScreen.main.bounds.height / 3
     }
 }

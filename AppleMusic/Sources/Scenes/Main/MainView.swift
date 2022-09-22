@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @State var isSearchBarActive = false
+    
     var body: some View {
         ZStack {
             TabView {
@@ -24,17 +27,20 @@ struct MainView: View {
                     Image(systemName: "dot.radiowaves.left.and.right")
                     Text("Радио")
                 }
-
-                SearchView()
+                
+                SearchView(isSearchBarActive: $isSearchBarActive)
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                         Text("Поиск")
                     }
             }
             .accentColor(.red)
-
-            PlayerView()
-                .offset(y: Metrics.PlaybackViewYOffset)
+            .safeAreaInset(edge: .bottom) {
+                if !isSearchBarActive {
+                    PlayerView()
+                        .offset(y: Metrics.PlaybackViewYOffset)
+                }
+            }
         }
     }
 }

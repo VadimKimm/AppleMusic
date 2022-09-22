@@ -20,6 +20,8 @@ struct SearchDetailView: View {
 
             SearchDetailBottomSectionView(model: model, title: title, isTwoRow: false)
 
+            SearchDetailMiddleSectionView(model: model)
+
             SearchDetailBottomSectionView(model: model, title: "Плэйлисты", isTwoRow: true)
 
             Divider()

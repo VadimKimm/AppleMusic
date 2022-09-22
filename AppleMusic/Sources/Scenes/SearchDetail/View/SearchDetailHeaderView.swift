@@ -24,7 +24,7 @@ struct SearchDetailHeaderView: View {
                 Spacer()
 
                 Button("См. все") {
-                    print("123")
+                    print("Show all button pressed")
                 }
                 .foregroundColor(.red)
             }

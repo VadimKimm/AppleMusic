@@ -13,10 +13,10 @@ struct SearchDetailBottomSectionView: View {
     let title: String
     let isTwoRow: Bool
 
-    let rows = [GridItem(.fixed(200))]
+    let rows = [GridItem(.fixed(222))]
     let twoRows = [
-        GridItem(.fixed(200)),
-        GridItem(.fixed(200))
+        GridItem(.fixed(222)),
+        GridItem(.fixed(222))
     ]
 
     var body: some View {

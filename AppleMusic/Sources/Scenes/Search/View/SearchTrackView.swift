@@ -8,13 +8,42 @@
 import SwiftUI
 
 struct SearchTrackView: View {
+
+    let track: TrackModel
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image(track.image)
+                .resizable()
+                .scaledToFit()
+                .cornerRadius(Metrics.imageCornerRadius)
+
+            VStack(alignment: .leading) {
+                Text(track.author)
+                    .foregroundColor(.primary)
+                Text(track.song)
+                    .foregroundColor(.secondary)
+                    .font(.caption)
+            }
+
+            Spacer()
+
+            Image(systemName: "ellipsis")
+        }
+        .frame(height: Metrics.frameHeight)
     }
 }
 
 struct SearchTrackView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchTrackView()
+        SearchTrackView(track: ModelData().tracks[5])
     }
 }
+
+extension SearchTrackView {
+    enum Metrics {
+        static let imageCornerRadius: CGFloat = 8
+        static let frameHeight: CGFloat = 50
+    }
+}
+

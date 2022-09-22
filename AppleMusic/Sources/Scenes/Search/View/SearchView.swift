@@ -8,28 +8,23 @@
 import SwiftUI
 
 struct SearchView: View {
-
-    @State private var searchText = ""
+    
+    @Binding var isSearchBarActive: Bool
     @ObservedObject private var model = ModelData()
+    @State private var searchText = ""
+    @State private var selectedSearch = 1
+    @State private var searchPlaceholder = "Ваша медиатека"
 
-    let columns = Array(repeating: GridItem(.flexible(), spacing: Metrics.columnsSpacing), count: 2)
+    let columns = [
+        GridItem(.flexible(), spacing: Metrics.columnsSpacing),
+        GridItem(.flexible(), spacing: Metrics.columnsSpacing)
+    ]
+    
 
     var body: some View {
         NavigationView {
             ScrollView {
                 VStack(alignment: .leading) {
-                    HStack(spacing: 15) {
-                        Image(systemName: "magnifyingglass")
-                            .font(.subheadline)
-                            .foregroundColor(.gray)
-
-                        TextField("Ваша медиатека", text: $searchText)
-                    }
-                    .frame(height: 40)
-                    .padding(.horizontal, Metrics.padding)
-                    .background(.quaternary)
-                    .cornerRadius(10)
-
                     Divider()
 
                     Text("Поиск по категориям")
@@ -53,13 +48,47 @@ struct SearchView: View {
             }
             .navigationTitle("Поиск")
             .navigationBarTitleDisplayMode(.large)
+            .searchable(text: $searchText,
+                        placement: .navigationBarDrawer(displayMode: .always),
+                        prompt: $searchPlaceholder.wrappedValue) {
+
+                VStack(alignment: .leading) {
+                    Picker("SearchSource", selection: $selectedSearch) {
+                        Text("Apple Music").tag(0)
+                        Text("Ваша медиатека").tag(1)
+                    }
+                    .onChange(of: selectedSearch) { tag in
+                        if tag == 0 {
+                            searchPlaceholder = "Артисты, песни, тексты и др."
+                        } else {
+                            searchPlaceholder = "Ваша медиатека"
+                        }
+                    }
+                    .pickerStyle(.segmented)
+                }
+
+                if searchText.isEmpty {
+                    ForEach(model.tracks) { result in
+                        SearchTrackView(track: result) }
+                } else {
+                    ForEach(model.tracks.filter { $0.song.contains(searchText) || $0.author.contains(searchText)  }) { result in
+                        SearchTrackView(track: result)
+                    }
+                }
+            }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: UIResponder.keyboardWillShowNotification)) { _ in
+            isSearchBarActive = true
+        }
+        .onReceive(NotificationCenter.default.publisher(for: UIResponder.keyboardWillHideNotification)) { _ in
+            isSearchBarActive = false
         }
     }
 }
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView()
+        SearchView(isSearchBarActive: .constant(false))
             .previewInterfaceOrientation(.portrait)
     }
 }

@@ -31,7 +31,6 @@ struct SearchDetailBottomSectionView: View {
                     .frame(width: Metrics.frameWidth)
                 }
             }
-//            .padding(.trailing)
         }
     }
 }
@@ -45,7 +44,5 @@ struct SearchDetailBottomSectionView_Previews: PreviewProvider {
 extension SearchDetailBottomSectionView {
     enum Metrics {
         static let frameWidth: CGFloat = (UIScreen.main.bounds.width - 22) / 2
-//        static let frameHeight: CGFloat = UIScreen.main.bounds.height / 3
-//        static let rowWidth: CGFloat = (UIScreen.main.bounds.width) / 2
     }
 }

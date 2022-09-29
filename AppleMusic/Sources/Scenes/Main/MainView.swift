@@ -33,6 +33,12 @@ struct MainView: View {
                         Image(systemName: "magnifyingglass")
                         Text("Поиск")
                     }
+
+                SearchMainUIKitView()
+                    .tabItem {
+                        Image(systemName: "magnifyingglass")
+                        Text("Поиск UIKit")
+                    }
             }
             .accentColor(.red)
             .safeAreaInset(edge: .bottom) {

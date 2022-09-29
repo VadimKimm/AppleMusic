@@ -37,6 +37,7 @@
 		DDC3754928E2088E005A5EE2 /* SearchPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC3754828E2088E005A5EE2 /* SearchPickerView.swift */; };
 		DDC3754C28E20A84005A5EE2 /* SearchInitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC3754B28E20A84005A5EE2 /* SearchInitialView.swift */; };
 		DDC3755828E2128D005A5EE2 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC3755728E2128D005A5EE2 /* SearchCollectionViewCell.swift */; };
+		DDC3755A28E45798005A5EE2 /* SearchUIKitHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC3755928E45798005A5EE2 /* SearchUIKitHeaderView.swift */; };
 		DDCD766028D0D3C600F637CE /* SearchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD765F28D0D3C600F637CE /* SearchDetailView.swift */; };
 		DDFF8FD828D9CEC700E826EE /* PlayerTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF8FD728D9CEC700E826EE /* PlayerTimerView.swift */; };
 		DDFF8FDA28D9CFFF00E826EE /* PlayerMediaButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF8FD928D9CFFF00E826EE /* PlayerMediaButtonsView.swift */; };
@@ -79,6 +80,7 @@
 		DDC3754828E2088E005A5EE2 /* SearchPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPickerView.swift; sourceTree = "<group>"; };
 		DDC3754B28E20A84005A5EE2 /* SearchInitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInitialView.swift; sourceTree = "<group>"; };
 		DDC3755728E2128D005A5EE2 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		DDC3755928E45798005A5EE2 /* SearchUIKitHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUIKitHeaderView.swift; sourceTree = "<group>"; };
 		DDCD765F28D0D3C600F637CE /* SearchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailView.swift; sourceTree = "<group>"; };
 		DDFF8FD728D9CEC700E826EE /* PlayerTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTimerView.swift; sourceTree = "<group>"; };
 		DDFF8FD928D9CFFF00E826EE /* PlayerMediaButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerMediaButtonsView.swift; sourceTree = "<group>"; };
@@ -352,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				DDC3755628E21255005A5EE2 /* Cell */,
+				DDC3755928E45798005A5EE2 /* SearchUIKitHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 				DD83147928CE2E0A00EF9EF7 /* SearchCategoryModel.swift in Sources */,
 				DDC3755828E2128D005A5EE2 /* SearchCollectionViewCell.swift in Sources */,
 				DD56D2E228C4EA13008B6A2A /* RadioTopSectionView.swift in Sources */,
+				DDC3755A28E45798005A5EE2 /* SearchUIKitHeaderView.swift in Sources */,
 				DD56D2E628C4FAF1008B6A2A /* RadioBottomSectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
